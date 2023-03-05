@@ -1,0 +1,59 @@
+.home-1 {
+    background:
+        linear-gradient(
+          rgba(0, 0, 0, 0.7), 
+          rgba(0, 0, 0, 0.7)
+        ),
+        url('https://wallpapersmug.com/download/5120x2880/99db0a/vietnam-city-buildings-night.jpg');
+
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.home-2 {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.account {
+    background:
+        linear-gradient(
+          rgba(0, 0, 0, 0.7), 
+          rgba(0, 0, 0, 0.7)
+        ),
+        url('images/home1.jpg');
+
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.footer {
+    background:
+        linear-gradient(
+          rgba(0, 0, 0, 0.7), 
+          rgba(0, 0, 0, 0.7)
+        ),
+        url('https://wallpapersmug.com/download/5120x2880/99db0a/vietnam-city-buildings-night.jpg');
+
+    height: 20vh;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: gray;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
