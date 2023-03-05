@@ -7,7 +7,7 @@ urlpatterns = [
     path('faq', faq, name='faq'),
     path('blog', blog, name='blog'),
     path('account', account, name='account'),
-    path('login', login, name='login'),
+    path('login', Login.as_view(), name='login'),
     path('register', register, name='register'),
 ]
 

@@ -38,7 +38,15 @@
                     <a class="nav-link active" aria-current="page" href="{% url 'home' %}">Home</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link disabled" href="{% url 'privacytools' %}" tabindex="-1" aria-disabled="true">Privacy Tools</a>
+
+                    <a
+                    {% if request.user.is_authenticated %}
+                    class="nav-link" href="{% url 'privacytools' %}"
+                    {%  else %}
+                    class="nav-link disabled" href="{% url 'privacytools' %}" tabindex="-1" aria-disabled="true"
+                    {% endif %}
+                    >Privacy Tools</a>
+
                   </li>
                   <li class="nav-item">
                     <a class="nav-link" href="{% url 'faq' %}">FAQ</a>
@@ -48,7 +56,15 @@
                   </li>
                 </ul>
                 <div class="navbar-nav">
-                  <a class="nav-link" href="{% url 'account' %}">Account</a>
+
+                  <a class="nav-link" 
+                  {% if request.user.is_authenticated %}
+                  href="{% url 'account' %}"
+                  {% else %}
+                  href="{% url 'login' %}"
+                  {% endif %}
+                  >Account</a>
+
                 </div>
               </div>
             </div>
