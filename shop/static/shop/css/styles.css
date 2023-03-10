@@ -19,7 +19,6 @@
 }
 
 .home-2 {
-    height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -48,6 +47,7 @@
         url('https://wallpapersmug.com/download/5120x2880/99db0a/vietnam-city-buildings-night.jpg');
 
     height: 20vh;
+    bottom: 0;
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;

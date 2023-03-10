@@ -9,6 +9,7 @@ urlpatterns = [
     path('account', account, name='account'),
     path('login', Login.as_view(), name='login'),
     path('register', register, name='register'),
+    path('buy', buy, name='buy')
 ]
 
 handler404 = error_404

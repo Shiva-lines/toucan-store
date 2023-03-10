@@ -18,7 +18,8 @@ def faq(request):
     return render(request, 'faq.html')
 
 def blog(request):
-    return render(request, 'blog.html')
+    num_of_articles = range(20)
+    return render(request, 'blog.html', {'range': num_of_articles})
 
 def account(request):
     return render(request, 'account.html')
@@ -38,3 +39,6 @@ class Login(LoginView):
 
     def get_success_url(self):
         return reverse_lazy('home')
+
+def buy(request):
+    return render(request, 'buy.html')

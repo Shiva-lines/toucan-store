@@ -3,14 +3,16 @@
 {% block content %}
 <main>
   <div class="home-1">
+    <div class="container text-center">
       <h1><strong>ToucanVPN</strong>: Secure. Simple. Convenient.</h1>
+    </div>
     </div>
   </div>
   <div class="home-2">
     <div class="container-sm">
       <div class="pricing-header p-3 pb-md-4 mx-auto text-center mt-3">
         <h1 class="display-4 fw-normal">Pricing</h1>
-        <p class="fs-5 text-muted">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quasi mollitia, recusandae neque nisi quae facere natus sequi odio soluta! Quia eaque aut fuga dolores ipsa animi incidunt, aspernatur perferendis dicta!</p>
+        <p class="fs-5 text-muted">Below, you'll find a breakdown of our VPN service plans, including the features and benefits of each. Take a look and see which plan might be the best fit for your specific needs and budget. If you have any questions or need help choosing a plan, don't hesitate to reach out to our support team.</p>
       </div>
 
       <div class="row row-cols-1 row-cols-md-3 mb-3 text-center">
@@ -25,8 +27,11 @@
                 <li>1 connection</li>
                 <li>1 geolocation</li>
                 <li>Limited speed</li>
-              <button type="button" class="w-100 btn btn-lg btn-outline-primary">Get started</button>
-            </div>
+              </ul>
+                <form action="{% url 'buy' %}">
+                  <input type="submit" class="w-100 btn btn-lg btn-outline-primary" value="Get started" />
+                </form>
+              </div>
           </div>
         </div>
         <div class="col">
@@ -40,9 +45,11 @@
                 <li>2 connections</li>
                 <li>3 geolocations</li>
                 <li>Unlimited speed</li>
-                <li>Cloud Privacy Tools</li>
+                <li>Privacy Tools</li>
               </ul>
-              <button type="button" class="w-100 btn btn-lg btn-primary">Get started</button>
+              <form action="{% url 'buy' %}">
+                <input type="submit" class="w-100 btn btn-lg btn-primary" value="Get started" />
+              </form>
             </div>
           </div>
         </div>
@@ -52,14 +59,16 @@
               <h4 class="my-0 fw-normal">Special</h4>
             </div>
             <div class="card-body">
-              <h1 class="card-title pricing-card-title">$29<small class="text-muted fw-light">/mo</small></h1>
+              <h1 class="card-title pricing-card-title">$15<small class="text-muted fw-light">/mo</small></h1>
               <ul class="list-unstyled mt-3 mb-4">
                 <li>10 connections</li>
                 <li>6 geolocations</li>
                 <li>Unlimited speed</li>
                 <li>Cloud Privacy Tools</li>
               </ul>
-              <button type="button" class="w-100 btn btn-lg btn-primary">Get started</button>
+              <form action="{% url 'buy' %}">
+                <input type="submit" class="w-100 btn btn-lg btn-primary" value="Get started" />
+              </form>
             </div>
           </div>
         </div>
